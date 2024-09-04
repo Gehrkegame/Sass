@@ -116,77 +116,20 @@
   color: var(--font-color-light);
 }
 
-.logo-icons img {
+.icon-wrapper {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logo-icons {
   box-shadow: 0 10px 20px rgba(2, 2, 2, 0.39);
   background-color: var(--white);
-}
-
-.icon-wrapper {
-  display: flex;
+  width: 50%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
   position: relative;
-}
-
-.one {
-  height: 60px;
-  border: 10px solid white;
-  position: absolute;
-  right: 8px;
-  border-radius: var(--size-40);
-}
-
-.two {
-  height: 80px;
-  padding-top: 18px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
-  border-radius: var(--size-40);
-  position: absolute;
-  left: 50px;
-}
-
-.three {
-  height: 60px;
-
-  position: absolute;
-  right: -537px;
-  border-radius: var(--size-40);
-}
-
-.four {
-  height: 60px;
-
-  position: absolute;
-  right: -34px;
-  top: 150px;
-  border-radius: var(--size-40);
-}
-
-.five {
-  height: 60px;
-
-  position: absolute;
-  top: 245px;
-  right: -149px;
-  border-radius: var(--size-40);
-}
-
-.six {
-  height: 60px;
-
-  position: absolute;
-  top: 160px;
-  left: 335px;
-  border-radius: var(--size-40);
-}
-
-.seven {
-  height: var(--size-60);
-
-  position: absolute;
-  left: 462px;
-  top: 301px;
-  border-radius: var(--size-40);
 }
 
 .text-benefits {
