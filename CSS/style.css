@@ -117,19 +117,67 @@
 }
 
 .icon-wrapper {
-  display: grid;
+  display: flex;
   position: relative;
-  grid-template-columns: repeat(3, 1fr);
 }
 
-.logo-icons {
+.icon-logo img {
   box-shadow: 0 10px 20px rgba(2, 2, 2, 0.39);
   background-color: var(--white);
-  width: 50%;
-  max-width: 100%;
-  vertical-align: middle;
-  border-style: none;
-  position: relative;
+  border-radius: 50%;
+}
+
+.one {
+  height: 60px;
+  border: 10px solid white;
+  position: absolute;
+  right: 8px;
+}
+
+.two {
+  height: 80px;
+  position: absolute;
+  left: 50px;
+  border: 10px solid white;
+}
+
+.three {
+  height: 60px;
+  position: absolute;
+  right: -537px;
+  border: 10px solid white;
+}
+
+.four {
+  height: 60px;
+  position: absolute;
+  right: -34px;
+  top: 150px;
+  border: 10px solid white;
+}
+
+.five {
+  height: 60px;
+  position: absolute;
+  top: 245px;
+  right: -149px;
+  border: 10px solid white;
+}
+
+.six {
+  height: 60px;
+  position: absolute;
+  top: 160px;
+  left: 335px;
+  border: 10px solid white;
+}
+
+.seven {
+  height: var(--size-60);
+  position: absolute;
+  left: 462px;
+  top: 301px;
+  border: 10px solid white;
 }
 
 .text-benefits {
