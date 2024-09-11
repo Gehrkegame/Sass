@@ -54,6 +54,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: var(--font-color-light);
+}
+
 img {
   vertical-align: middle;
   border-style: none;
