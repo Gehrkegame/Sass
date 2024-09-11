@@ -170,7 +170,7 @@
 
 .seven {
   top: 370px;
-  left: 150px;
+  left: var(--size-90);
   padding-left: 10px;
 }
 
@@ -255,4 +255,9 @@
 
 .blue-dot-wrapper {
   display: flex;
+  font-size: 20px;
+}
+
+.blue-dot {
+  background-color: var(--font-color-light);
 }
