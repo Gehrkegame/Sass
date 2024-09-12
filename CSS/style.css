@@ -255,9 +255,15 @@
 
 .blue-dot-wrapper {
   display: flex;
-  font-size: 20px;
+  font-size: 10px;
+  gap: 20px;
+  justify-content: center;
 }
 
 .blue-dot {
   background-color: var(--font-color-light);
+  border-radius: 50%;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
 }
