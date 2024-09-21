@@ -261,9 +261,16 @@
 }
 
 .blue-dot {
-  background-color: var(--font-color-light);
+  background-color: lightblue;
   border-radius: 50%;
-  width: 30px;
+  width: var(--size-60);
   display: flex;
   flex-direction: column;
+}
+
+.fa-solid {
+  color: var(--font-color-base);
+  position: relative;
+  top: 25px;
+  left: 24px;
 }
