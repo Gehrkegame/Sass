@@ -315,15 +315,57 @@
 .hub-wrapper {
   display: flex;
   margin-top: 50px;
+  gap: 90px;
 }
 
-.hub-photo {
+.hub-photos {
+  margin: var(--size-50) auto;
+  width: 50%;
+}
+
+.hub-photos img {
+  width: 530px;
+  padding-left: 60px;
+  position: relative;
+  left: 40px;
+}
+
+.dot-photo {
+  background-image: url(../saas-project-assets/abstract/dots.svg);
+  position: relative;
+  background-repeat: no-repeat;
+  height: 88%;
+  z-index: -1;
+  bottom: 400px;
+  left: 30px;
+}
+
+.hub-text {
+  font-weight: 600;
+  padding: var(--size-150);
+}
+
+.hub-test {
+  margin-bottom: var(--size-30);
+  line-height: var(--size-40);
+  font-size: var(--size-30);
+  color: black;
+}
+
+.hub-text img {
+  width: 20%;
 }
 
 .hub-text h5 {
+  font-weight: 700;
+  font-size: var(--size-20);
+  color: black;
   margin: 0;
 }
 
 .hub-text h6 {
   margin: 0;
+  font-weight: 700;
+  font-size: var(--size-14);
+  color: var(--font-color-light);
 }
