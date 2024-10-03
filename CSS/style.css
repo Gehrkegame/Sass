@@ -417,6 +417,7 @@
 .price-text h1 {
   font-size: var(--size-60);
   color: black;
+  margin-bottom: 10px;
 }
 
 .price-text p {
@@ -424,4 +425,25 @@
 }
 .price-text hr {
   width: 100%;
+}
+
+.not-needed {
+  font-size: var(--size-20);
+}
+
+#play-symbole {
+  position: relative;
+  left: -8px;
+  top: 1px;
+  color: var(--white);
+}
+
+.features-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-20);
+}
+
+.features img {
+  width: 20%;
 }
