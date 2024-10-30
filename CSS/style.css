@@ -402,7 +402,8 @@
 .pricing-header {
   padding-left: var(--size-70);
   display: flex;
-  gap: 20px;
+  gap: var(--size-100);
+  margin-bottom: var(--size-100);
 }
 
 .price-text {
@@ -526,14 +527,19 @@ input[type="submit"] {
   width: 100%;
 }
 
+input[type="text"] {
+  height: var(--size-40);
+  border: solid var(--font-color-light);
+  width: var(--size-150);
+  border-radius: var(--size-12);
+}
+
 .contact-form {
   background-color: var(--white);
   width: 33%;
   text-align: left;
   border-radius: 2%;
   margin-top: var(--size-40);
-  display: flex;
-  flex-direction: column;
 }
 
 .top-form {
@@ -541,4 +547,70 @@ input[type="submit"] {
   font-size: 60%;
   width: 150%;
   font-weight: 600;
+}
+
+.contact-form a {
+  font-size: var(--size-16);
+  text-decoration: 1px underline dashed;
+}
+
+.contact-form select {
+  height: var(--size-40);
+  border: solid var(--font-color-light);
+  width: var(--size-150);
+  border-radius: var(--size-12);
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+.contact-form textarea {
+  border: none;
+}
+
+.name-form {
+  display: flex;
+  gap: 30px;
+  margin: 20px;
+  margin-left: 0;
+  padding-left: var(--size-40);
+}
+
+#country {
+  position: relative;
+  left: var(--size-14);
+}
+
+.textbox {
+  height: 160px;
+  border: solid var(--font-color-light);
+  width: 400px;
+  border-radius: var(--size-12);
+}
+
+.checkbox {
+  width: 123%;
+  font-size: var(--size-14);
+  margin-top: var(--size-20);
+  padding-left: var(--size-30);
+}
+
+.view {
+  padding-left: var(--size-20);
+}
+
+.gray {
+  color: var(--font-color-light);
+}
+
+#btn-get {
+  position: relative;
+  left: var(--size-150);
+}
+
+.footer-contaner {
+  display: flex;
+}
+
+.top-footer {
+  margin-top: var(--size-60);
 }
