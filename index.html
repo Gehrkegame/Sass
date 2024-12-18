@@ -290,14 +290,16 @@
     <footer>
       <div class="footer-contaner">
        <div class="top-footer">
-        <img class="navbar-brand" src="./saas-project-assets/project_logo/logo.svg" alt="company-logo">
-        <p><i class="fa-solid fa-compass"></i>153 Williamson Plaza, Maggieberg</p>
-        <p><i class="fa-solid fa-phone"></i>+1 (o62) 109-9222</p></div>
+        <img class="navbar-brand project-logo" src="./saas-project-assets/project_logo/logo.svg" alt="company-logo">
+        
+        <p><i class="fa-solid fa-compass"></i> 153 Williamson Plaza, Maggieberg</p>
+        
+        <p><i class="fa-solid fa-phone"></i> +1 (062) 109-9222</p></div>
         <div class="company-footer">
-          <h6>company</h6>
+          <h6>Company</h6>
           <ul>
             <li>About</li>
-            <li>Career <input type="submit" class="btn btn-primary" value="Wer're hiring"></li>
+            <li>Career <input id="hiring" type="submit" class="btn btn-primary" value="We're hiring"></li>
             <li>Blog</li>
             <li>Customers</li>
             <li>Hire us</li>
@@ -330,6 +332,37 @@
           </ul>
         </div>
       </div>
+      <hr>
+      <div class="bottom-footer">
+        <div class="path"><a href="#">Privacy & Policy ></a> <a href="#">Terms ></a> <a href="#"> Site Map</a>
+        </div>
+        <div class="boxes">
+          <div id="social-boxes"><a class="social-icons" href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+          <div id="social-boxes"><a class="social-icons" href="#"><i class="fa-brands fa-google"></i></a></div>
+          <div id="social-boxes"><a class="social-icons" href="#"><i class="fa-brands fa-twitter"></i></a></div>
+          <div id="social-boxes"><a class="social-icons" href="#" ><i class="fa-brands fa-github"></i></i></a></div>
+          <select name="countrySelect" id="countryfooter">
+            <option value="can">CA Canada</option>
+            <option value="usa"> US USA</option>
+            <option value="mex"> MX Mexico</option>
+          </select>
+        </div>
+        
+      </div>
+      <div class="copyright">
+        <p>@ Front. 2022 Responsive designs. All rights reserved</p>
+        <p>When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
+      </div>
     </footer>
+    <script>
+      const navButton = document.querySelector('button[aria-expanded]');
+
+      function toggleNav ({ target }) {
+        const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+        navButton.setAttribute('aria-expanded', !expanded);
+      }
+      navButton.addEventListener('click', toggleNav)
+      
+    </script>
   </body>
 </html>
